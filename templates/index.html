@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Education Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <form action="/submit" method="post">
+            <h3>Tweet Message Check</h3>
+
+            {% if pred ==0 %}
+            <div class='col'>
+                <b>
+            <p style="color:green" >it is not a SPAM message.</p>
+
+                </b>
+            </div>
+            {% elif pred==1 %}
+            <p style="color:red">it is a SPAM message.</p>
+            {% else %}
+            <p style="color:black"> type the tweet Message </p>
+
+            {% endif %}
+
+
+            
+            <textarea name="hello" rows="5" cols="90" >
+            
+             </textarea><br/> 
+         
+            <input  type="submit" value="Predict" >
+            
+        </form>
+    </center>
+
+
+</body>
+
+
+
+    </html>
